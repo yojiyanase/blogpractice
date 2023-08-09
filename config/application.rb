@@ -14,7 +14,7 @@ module BlogPractice
     if Rails.env.development? || Rails.env.test?
       Bundler.require(*Rails.groups)
       Dotenv::Railtie.load
-
+    end
     Aws.use_bundled_cert!
 
     # Settings in config/environments/* take precedence over those specified here.

@@ -15,6 +15,9 @@ test:
 
 production:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: blogapp_production
   username: blogapp
   password: <%= ENV['DATABASE_PASSWORD'] %>

@@ -50,7 +50,6 @@ default: &default
 
 development:
   <<: *default
-  <<: *yaml_aliases  # Add this line to enable Alias parsing
   compile: true
 
   # Verifies that correct packages and versions are installed by inspecting package.json, yarn.lock, and node_modules

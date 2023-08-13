@@ -1,0 +1,16 @@
+current directory: /home/yoji/blog_practice/vendor/bundle/ruby/2.7.0/gems/haml-6.1.1/ext/haml
+/home/yoji/.rbenv/versions/2.7.7/bin/ruby -I /home/yoji/.rbenv/versions/2.7.7/lib/ruby/2.7.0 -r ./siteconf20230811-11760-11k9zoc.rb extconf.rb
+creating Makefile
+
+current directory: /home/yoji/blog_practice/vendor/bundle/ruby/2.7.0/gems/haml-6.1.1/ext/haml
+make "DESTDIR=" clean
+
+current directory: /home/yoji/blog_practice/vendor/bundle/ruby/2.7.0/gems/haml-6.1.1/ext/haml
+make "DESTDIR="
+compiling haml.c
+compiling hescape.c
+linking shared-object haml/haml.so
+
+current directory: /home/yoji/blog_practice/vendor/bundle/ruby/2.7.0/gems/haml-6.1.1/ext/haml
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 haml.so ./.gem.20230811-11760-8hddlo/haml

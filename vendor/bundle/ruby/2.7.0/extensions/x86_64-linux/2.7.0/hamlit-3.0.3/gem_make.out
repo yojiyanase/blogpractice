@@ -1,0 +1,16 @@
+current directory: /home/yoji/blog_practice/vendor/bundle/ruby/2.7.0/gems/hamlit-3.0.3/ext/hamlit
+/home/yoji/.rbenv/versions/2.7.7/bin/ruby -I /home/yoji/.rbenv/versions/2.7.7/lib/ruby/2.7.0 -r ./siteconf20230811-11760-1hpt1cq.rb extconf.rb
+creating Makefile
+
+current directory: /home/yoji/blog_practice/vendor/bundle/ruby/2.7.0/gems/hamlit-3.0.3/ext/hamlit
+make "DESTDIR=" clean
+
+current directory: /home/yoji/blog_practice/vendor/bundle/ruby/2.7.0/gems/hamlit-3.0.3/ext/hamlit
+make "DESTDIR="
+compiling hamlit.c
+compiling hescape.c
+linking shared-object hamlit/hamlit.so
+
+current directory: /home/yoji/blog_practice/vendor/bundle/ruby/2.7.0/gems/hamlit-3.0.3/ext/hamlit
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 hamlit.so ./.gem.20230811-11760-snvdxt/hamlit

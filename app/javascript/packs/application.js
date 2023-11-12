@@ -22,16 +22,21 @@ require("@rails/actiontext")
 import $ from 'jquery'
 import axios from 'axios'
 
+const handleHeartDisplay = (hasLiked) => {
+  if (has_liked) {
+    $('.active-heart').removeClass('hidden')
+  } else {
+    $('.inactive-heart').removeClass('hidden')
+  }
+}
+
 document.addEventListener('turbolinks:load', () => {
   const dataset = $('#article-show').data()
   const articleId = dataset.articleId
+
   axios.get(`/articles/${articleId}/like`)
     .then((response) => {
       const has_liked = response.data.hasLiked
-      if (has_liked) {
-        $('.active-heart').removeClass('hidden')
-      } else {
-        $('.inactive-heart').removeClass('hidden')
-      }
+      handleHeartDisplay(hasLiked)
     })
 })

@@ -23,10 +23,15 @@ import $ from 'jquery'
 import axios from 'axios'
 
 document.addEventListener('turbolinks:load', () => {
-  $('.article_title').on('click', () => {
-    axios.get('/')
-      .then((response) => {
-        console.log(response)
-      })
-  })
+  const dataset = $('#article-show').data()
+  const articleId = dataset.articleId
+  axios.get(`/articles/${articleId}/like`)
+    .then((response) => {
+      const has_liked = response.data.hasLiked
+      if (has_liked) {
+        $('.active-heart').removeClass('hidden')
+      } else {
+        $('.inactive-heart').removeClass('hidden')
+      }
+    })
 })
